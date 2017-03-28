@@ -1,0 +1,18 @@
+;; 10.46.zone
+;; Reverselookupzone für domainname
+;;
+$TTL 2D
+@       IN      SOA     gateway-01.pjodd. mail.domainname. (
+                                        3      ; Serial
+                                        8H      ; Refresh
+                                        2H      ; Retry
+                                        4W      ; Expire
+                                        2D )    ; TTL Negative Cache
+
+@       IN      NS      gateway-01.pjodd.
+
+; gateways
+1.1     IN      PTR     gateway-01.pjodd.
+2.1     IN      PTR     gateway-02.pjodd.
+
+254.254 IN      PTR     anycast.pjodd.
