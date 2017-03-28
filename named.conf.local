@@ -6,5 +6,5 @@
 // organization
 //include "/etc/bind/zones.rfc1918";
 
-zone "pjodd" {type master; file "/etc/bind/db.pjodd";};
-zone "46.10.in-addr.arpa" {type master; file "/etc/bind/10.46.zone";};
+zone "pjodd" {type master; file "/etc/powerdns/dns_pjodd/db.pjodd";};
+zone "46.10.in-addr.arpa" {type master; file "/etc/powerdns/dns_pjodd/10.46.zone";};
