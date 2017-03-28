@@ -1,0 +1,19 @@
+;; db.pjodd
+;; Forwardlookupzone for pjodd
+;;
+$TTL 2D
+@       IN      SOA     pjodd. mail.domainname. (
+                                4       ; Serial
+                                8H      ; Refresh
+                                2H      ; Retry
+                                4W      ; Expire
+                                3H )    ; NX (TTL Negativ Cache)
+
+@                               IN      NS      gateway-01.pjodd.
+;                               IN      MX      10 mailserver.domainname.
+                                IN      A       10.46.0.1
+
+gateway-01                      IN      A       10.46.0.1
+gateway-02                      IN      A       10.46.1.1
+
+anycast                         IN      A       10.46.254.254
