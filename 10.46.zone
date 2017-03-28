@@ -12,7 +12,7 @@ $TTL 2D
 @       IN      NS      gateway-01.pjodd.
 
 ; gateways
-1.1     IN      PTR     gateway-01.pjodd.
-2.1     IN      PTR     gateway-02.pjodd.
+0.1     IN      PTR     gateway-01.pjodd.
+1.1     IN      PTR     gateway-02.pjodd.
 
 254.254 IN      PTR     anycast.pjodd.
