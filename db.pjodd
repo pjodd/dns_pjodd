@@ -2,7 +2,7 @@
 ;; Forwardlookupzone for pjodd
 ;;
 $TTL 2D
-@       IN      SOA     pjodd. mail.domainname. (
+@                               IN      SOA     pjodd. mail.domainname. (
                                 4       ; Serial
                                 8H      ; Refresh
                                 2H      ; Retry
