@@ -9,11 +9,20 @@ $TTL 2D
                                 4W      ; Expire
                                 3H )    ; NX (TTL Negativ Cache)
 
-@                               IN      NS      gateway-01.pjodd.
-;                               IN      MX      10 mailserver.domainname.
-                                IN      A       10.46.0.1
+@                               IN      NS      ns.pjodd.
+;                               IN      MX      10 mail.pjodd.
+                                IN      AAAA    fdec:910d:d05e::ff01
 
-gateway-01                      IN      A       10.46.0.1
-gateway-02                      IN      A       10.46.1.1
+gateway-01.ipv4                 IN      A       10.46.0.1
+gateway-01                      IN      AAAA    fdec:910d:d05e::ff01
 
-anycast                         IN      A       10.46.254.254
+gateway-02.ipv4                 IN      A       10.46.0.2
+gateway-02                      IN      AAAA    fdec:910d:d05e::ff02
+
+anycast.ipv4                    IN      A       10.46.254.254
+
+ntp.services.ipv4               IN      A       10.46.0.1
+ntp.services                    IN      AAAA    fdec:910d:d05e::ff01
+
+updates.services.ipv4           IN      A       10.46.0.1
+updates.services                IN      AAAA    fdec:910d:d05e::ff01
