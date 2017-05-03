@@ -1,5 +1,5 @@
 ;; 10.46.zone
-;; Reverselookupzone für domainname
+;; Reverselookupzone for domainname
 ;;
 $TTL 2D
 @       IN      SOA     gateway-01.pjodd. mail.domainname. (
@@ -9,6 +9,7 @@ $TTL 2D
                                         4W      ; Expire
                                         2D )    ; TTL Negative Cache
 
+; now what is this? need help!
 @       IN      NS      gateway-01.ipv4.pjodd.
 
 ; gateways
