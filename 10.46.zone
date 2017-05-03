@@ -12,7 +12,12 @@ $TTL 2D
 @       IN      NS      gateway-01.pjodd.
 
 ; gateways
-0.1     IN      PTR     gateway-01.pjodd.
-1.1     IN      PTR     gateway-02.pjodd.
+0.1     IN      PTR     gateway-01.ipv4.pjodd.
+1.1     IN      PTR     gateway-02.ipv4.pjodd.
 
-254.254 IN      PTR     anycast.pjodd.
+; services
+0.1     IN      PTR     ntp.services.ipv4.pjodd.
+0.1     IN      PTR     updates.services.ipv4.pjodd.
+
+; anycast, the IP of all WiFi-nodes as seen from the connected WiFi-clients
+254.254 IN      PTR     anycast.ipv4.pjodd.
