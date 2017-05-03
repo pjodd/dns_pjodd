@@ -9,7 +9,7 @@ $TTL 2D
                                         4W      ; Expire
                                         2D )    ; TTL Negative Cache
 
-@       IN      NS      gateway-01.pjodd.
+@       IN      NS      gateway-01.ipv4.pjodd.
 
 ; gateways
 0.1     IN      PTR     gateway-01.ipv4.pjodd.
